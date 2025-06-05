@@ -1,133 +1,93 @@
-'use client'
+'use client';
 import Link from "next/link";
 import { useState } from "react";
-import { Button } from "./ui/button";
 import { FiMenu, FiX } from "react-icons/fi";
-
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    {title: "About", href: "/About"},
-    {title: "Skills", href: "/Skills"},
-    {title: "Experience", href: "/Experience"},
-    // {title: "Tech Stack", href: "/Tech Stack"},
-    {title: "Projects", href: "/Projects"},
-    {title: "Contact", href: "/Contact"},
+    { title: "About", href: "/about" },
+    { title: "Skills", href: "/skills" },
+    { title: "Experience", href: "/experience" },
+    { title: "Projects", href: "/projects" },
+    { title: "Contact", href: "/contact" },
   ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev)
-  };
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
-  return(
-    <div className="w-full bg-black/70 h-20 shadow-md sticky top-0 backdrop-blur-2xl transition-colors z-50">
-      <div className="max-w-4xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
-        <h1 className="text-2xl text-white font-bold">Logo</h1>
+  return (
+    <header className="w-full flex justify-center sticky top-0 z-50 mt-4">
+      <div className="bg-black/70 backdrop-blur-2xl rounded-full border border-neutral-800/50 shadow-lg w-full max-w-5xl h-14 flex items-center justify-between px-6">
+        
+        {/* Logo with gradient text */}
+        <Link href="/" className="text-2xl font-bold">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-purple-400">
+            RS
+          </span>
+        </Link>
 
-         {/* Desktop Navigation */}
-         <div className="hidden md:inline-flex items-center gap-7 text-gray-300  duration-200">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-8">
           {navigation.map((item) => (
             <Link
-            key={item?.title}
-            href={item?.href}
-            className="text-sm uppercase font-semibold relative group overflow-hidden"
+              key={item.title}
+              href={item.href}
+              className="relative group text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium uppercase tracking-wider"
             >
-              {item?.title}
-              <span className="w-full h-[1px] bg-blue-700 absolute inline-block left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-200" />
-
+              {item.title}
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-teal-400 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
             </Link>
           ))}
-         </div>
+        </nav>
 
-         {/* Mobile Menu Icon */}
-         <div className="md:hidden">
-          <Button onClick={toggleMenu} aria-lable="Toggle Menu">
-            {isMenuOpen ? <FiX className="text-2xl text-white"/> : <FiMenu className="text-2xl text-white"/>}
-          </Button>
-         </div>
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={toggleMenu} 
+          aria-label="Toggle Menu"
+          className="md:hidden hover:bg-neutral-800/50 border border-neutral-800/50 p-2 rounded-md"
+        >
+          {isMenuOpen ? (
+            <FiX className="text-xl text-white" />
+          ) : (
+            <FiMenu className="text-xl text-white" />
+          )}
+        </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black/90 absolute top-20 left-0 w-full shadow-lg z-50">
-          <div className="flex flex-col items-center gap-4 py-4 text-gray-300">
+        <div 
+          className="md:hidden fixed inset-0 top-20 bg-neutral-900/95 backdrop-blur-3xl z-40 overflow-y-auto"
+          style={{ animation: "fadeIn 0.3s ease-out forwards" }}
+        >
+          <div className="flex flex-col items-center gap-8 py-8 px-4">
             {navigation.map((item) => (
               <Link
-              key={item?.title}
-              href={item?.href}
-              className="text-sm uppercase font-semibold relative group overflow-hidden"
-              onClick={toggleMenu}
+                key={item.title}
+                href={item.href}
+                onClick={toggleMenu}
+                className="relative group text-gray-300 hover:text-white text-lg font-medium uppercase tracking-wider py-2 px-4"
               >
-                {item?.title}
-                <span className="w-full h-[1px] bg-blue-700 absolute inline-block left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-200" />
+                {item.title}
+                <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-gradient-to-r from-teal-400 to-purple-500 transform -translate-x-1/2 group-hover:w-3/4 transition-all duration-300" />
               </Link>
             ))}
           </div>
         </div>
       )}
-    </div>
+
+      {/* Animation styles */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
+    </header>
   );
+};
 
-}
-
-
-
-export default Navbar
+export default Navbar;
 
 
-
-
-
-// "use client";
-// import { useState } from "react";
-// import { Globe } from "lucide-react"; 
-// import Link from "next/link";
-
-// export default function Navbar() {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   return (
-//     <header className="bg-[#232427] text-white px-4 py-3 rounded-2xl shadow-md max-w-6xl mx-auto mt-4">
-//       <div className="flex justify-between items-center flex-wrap">
-//         {/* Logo */}
-//         <div className="text-lg font-semibold">
-//           TETIANA ZAPOROZHETS
-//         </div>
-
-//         {/* Menu (Desktop) */}
-//         <nav className="hidden md:flex space-x-6 text-sm font-medium">
-//           <Link href="#services" className="text-blue-400 hover:underline">SERVICES</Link>
-//           <Link href="#technologies" className="hover:text-blue-400">TECHNOLOGIES</Link>
-//           <Link href="#portfolio" className="hover:text-blue-400">PORTFOLIO</Link>
-//           <Link href="#contact" className="hover:text-blue-400">CONTACT</Link>
-//         </nav>
-
-//         {/* Language Switcher */}
-//         <div className="flex items-center space-x-2 bg-[#1a1d25] px-3 py-1 rounded-full text-xs">
-//           <span>ENG</span>
-//           <Globe size={14} />
-//         </div>
-
-//         {/* Mobile Menu Toggle */}
-//         <button
-//           className="md:hidden mt-2 text-sm text-blue-400"
-//           onClick={() => setMenuOpen(!menuOpen)}
-//         >
-//           {menuOpen ? "Close" : "Menu"}
-//         </button>
-
-//         {/* Mobile Menu */}
-//         {menuOpen && (
-//           <nav className="flex flex-col space-y-2 mt-2 md:hidden text-sm font-medium w-full">
-//             <Link href="#services" className="text-blue-400">SERVICES</Link>
-//             <Link href="#technologies" className="hover:text-blue-400">TECHNOLOGIES</Link>
-//             <Link href="#portfolio" className="hover:text-blue-400">PORTFOLIO</Link>
-//             <Link href="#contact" className="hover:text-blue-400">CONTACT</Link>
-//           </nav>
-//         )}
-//       </div>
-//     </header>
-//   );
-// }
