@@ -45,7 +45,7 @@ const Navbar = () => {
         <button 
           onClick={toggleMenu} 
           aria-label="Toggle Menu"
-          className="md:hidden hover:bg-neutral-800/50 border border-neutral-800/50 p-2 rounded-md"
+          className="md:hidden hover:bg-neutral-800/50 border border-neutral-800/50 p-2 rounded-full"
         >
           {isMenuOpen ? (
             <FiX className="text-xl text-white" />
@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div 
-          className="md:hidden fixed inset-0 top-20 bg-neutral-900/95 backdrop-blur-3xl z-40 overflow-y-auto"
+          className="md:hidden fixed inset-0 top-20 bg-black/50 backdrop-blur-3xl z-40 overflow-y-auto"
           style={{ animation: "fadeIn 0.3s ease-out forwards" }}
         >
           <div className="flex flex-col items-center gap-8 py-8 px-4">

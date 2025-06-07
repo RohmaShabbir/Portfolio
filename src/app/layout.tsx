@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 
 const geistSans = Geist({
@@ -30,7 +31,7 @@ export default function RootLayout({
         className={` ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px]"></div>
-
+        <Link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet"></Link>
         <Navbar/>
         {children}
       </body>
