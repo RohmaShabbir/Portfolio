@@ -13,7 +13,7 @@ const Hero = () => {
           <div className='absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 border-l-2 border-t-2 border-teal-400/30 opacity-80'></div>
           <div className='absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 border-r-2 border-b-2 border-purple-400/30 opacity-80'></div>
           
-          <h1 className='text-4xl xs:text-5xl sm:text-6xl font-light text-white tracking-tight lg:text-7xl relative'>
+          <h1 className='text-3xl xs:text-4xl font-semibold sm:text-5xl  text-white tracking-tight lg:text-6xl relative'>
             <span style={{ 
               color: 'transparent', 
               backgroundImage: 'linear-gradient(to right, #8bd8d2, #c792ea)', 
@@ -22,8 +22,8 @@ const Hero = () => {
             }}>
               Rohma Shabbir
             </span>
-            <span className='absolute -bottom-1 sm:-bottom-2 left-0 w-1/3 h-0.5 sm:h-1 rounded-full' 
-                  style={{ background: 'linear-gradient(to right, #2dd4bf, #a855f7)' }}></span>
+            {/* <span className='absolute -bottom-1 sm:-bottom-2 left-0 w-1/3 h-0.5 sm:h-1 rounded-full' 
+                  style={{ background: 'linear-gradient(to right, #2dd4bf, #a855f7)' }}></span> */}
           </h1>
           
           <h2 className='text-gray-300 text-lg sm:text-xl md:text-2xl font-light lg:text-3xl mt-4 sm:mt-6'>
