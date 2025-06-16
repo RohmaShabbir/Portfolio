@@ -1,10 +1,12 @@
 'use client'
 import React from 'react';
-import { FaXTwitter, FaLinkedin, FaGithub } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
+import { LuLinkedin, LuGithub  } from "react-icons/lu";
+
 
 const Hero = () => {
   return (
-    <div className='max-w-5xl mx-auto border-b border-neutral-800/50 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8' 
+    <div  className='max-w-5xl mx-auto border-b border-neutral-800/50 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8' 
          style={{ background: 'linear-gradient(to bottom, rgba(38, 38, 38, 0.1), transparent)' }}>
       <div className='flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-10'>
         {/* Left Side: Content */}
@@ -54,7 +56,7 @@ const Hero = () => {
                  backgroundColor: 'rgba(38, 38, 38, 0.5)', 
                  border: '1px solid rgba(55, 65, 81, 0.5)'
                }}>
-              <FaLinkedin className='hover:text-blue-300 transition' />
+              <LuLinkedin className='hover:text-blue-300 transition' />
             </a>
             <a href='https://github.com/RohmaShabbir' target='_blank' rel='noopener noreferrer' 
                className='p-2 sm:p-3 rounded-full transition-all duration-300 hover:border-purple-400/30'
@@ -62,7 +64,7 @@ const Hero = () => {
                  backgroundColor: 'rgba(38, 38, 38, 0.5)', 
                  border: '1px solid rgba(55, 65, 81, 0.5)'
                }}>
-              <FaGithub className='hover:text-purple-300 transition' />
+              <LuGithub className='hover:text-purple-300 transition' />
             </a>
           </div>
         </div>
