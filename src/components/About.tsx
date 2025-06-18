@@ -31,7 +31,7 @@ const About = () => {
           </p>
 
           <p>
-            Among 700+ students, I distinguished myself by winning a Hackathon,
+            Among 1500+ students, I distinguished myself by winning a Hackathon,
             which led to me earning the title of Senior Student.
           </p>
 

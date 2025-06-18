@@ -15,7 +15,7 @@ const Hero = () => {
           <div className='absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 border-l-2 border-t-2 border-teal-400/30 opacity-80'></div>
           <div className='absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 border-r-2 border-b-2 border-purple-400/30 opacity-80'></div>
           
-          <h1 className='text-3xl xs:text-4xl font-semibold sm:text-5xl  text-white tracking-tight lg:text-6xl relative'>
+          <h1 className='text-3xl xs:text-4xl md:px-5 font-semibold sm:text-5xl  text-white tracking-tight lg:text-6xl relative'>
             <span style={{ 
               color: 'transparent', 
               backgroundImage: 'linear-gradient(to right, #8bd8d2, #c792ea)', 
@@ -41,7 +41,7 @@ const Hero = () => {
           </p>
 
           {/* Social Icons */}
-          <div className='flex lg:px-20 justify-center md:justify-start gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8 md:mt-10 text-white text-xl sm:text-2xl relative z-10'>
+          <div className='flex lg:px-20 justify-center md:px-8 gap-4 sm:gap-5 md:gap-6 mt-6 sm:mt-8 md:mt-10 text-white text-xl sm:text-2xl relative z-10'>
             <a href='https://x.com/X_Rohma?t=J9w1eXHOfDLlpBhWdJ4yuA&s=08' target='_blank' rel='noopener noreferrer' 
                className='p-2 sm:p-3 rounded-full transition-all duration-300 hover:border-teal-400/30'
                style={{ 
