@@ -20,8 +20,8 @@ export const navLinksdata = [
       link: "Tech Stack",
     },
     // {
-    //     _id: 1003,
-    //     title: "Projectcs",
+    //     _id: 1005,
+    //     title: "Projects",
     //     link: "Projects",
     //   },
     // {
