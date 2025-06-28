@@ -90,7 +90,7 @@ const Hero = () => {
                  style={{ 
                    background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.05))',
                    border: '1px solid rgba(55, 65, 81, 0.3)',
-                   animation: 'float 8s ease-in-out infinite'
+                   animation: 'float 1s ease-in-out infinite'
                  }}></div>
           </div>
         </div>
