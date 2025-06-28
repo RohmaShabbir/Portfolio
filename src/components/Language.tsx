@@ -10,10 +10,10 @@ const Language = () => {
   return (
     <section
       id="Language"
-      className="max-w-4xl mx-auto py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-10 border-b border-neutral-800/50"
+      className="max-w-4xl mx-auto py-10 sm:py-10 md:py-14 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-10 border-b border-neutral-800/50"
     >
       <div className="text-center text-white mb-12">
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 tracking-tight">
+        <h2 className="text-3xl sm:text-5xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 tracking-tight">
           Languages
         </h2>
       </div>

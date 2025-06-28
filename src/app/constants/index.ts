@@ -19,14 +19,14 @@ export const navLinksdata = [
       title: "Tech Stack",
       link: "Tech Stack",
     },
-    // {
-    //     _id: 1005,
-    //     title: "Projects",
-    //     link: "Projects",
-    //   },
-    // {
-    //     _id: 1004,
-    //     title: "Contact",
-    //     link: "Contact",
-    //   },
+    {
+        _id: 1005,
+        title: "Projects",
+        link: "Projects",
+      },
+    {
+        _id: 1006,
+        title: "Contact",
+        link: "Contact",
+      },
     ];

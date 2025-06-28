@@ -6,7 +6,9 @@ import { LuLinkedin, LuGithub  } from "react-icons/lu";
 
 const Hero = () => {
   return (
-    <div  className='max-w-5xl mx-auto border-b border-neutral-800/50 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8' 
+    <section
+    id="Hero"
+    className='max-w-5xl mx-auto border-b border-neutral-800/50 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8' 
          style={{ background: 'linear-gradient(to bottom, rgba(38, 38, 38, 0.1), transparent)' }}>
       <div className='flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-10'>
         {/* Left Side: Content */}
@@ -18,7 +20,7 @@ const Hero = () => {
           <h1 className='text-3xl xs:text-4xl md:px-5 font-semibold sm:text-5xl  text-white tracking-tight lg:text-6xl relative'>
             <span style={{ 
               color: 'transparent', 
-              backgroundImage: 'linear-gradient(to right, #8bd8d2, #c792ea)', 
+              backgroundImage: 'linear-gradient(to right, #6366f1, #8b5cf6, #ec4899)', 
               WebkitBackgroundClip: 'text',
               backgroundClip: 'text'
             }}>
@@ -105,7 +107,7 @@ const Hero = () => {
           50% { transform: translateY(-10px); }
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 
