@@ -32,7 +32,7 @@ const Hero = () => {
           
           <h2 className='text-gray-300 text-lg sm:text-xl md:text-2xl font-light lg:text-3xl mt-4 sm:mt-6'>
             <span className='px-3 sm:px-4 py-0.5 sm:py-1 md:px-6 md:py-1 rounded-lg'>
-              Frontend & AI Developer
+              Web & AI Developer
             </span>
           </h2>
 

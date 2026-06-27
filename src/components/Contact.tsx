@@ -24,7 +24,7 @@ const Contact = () => {
           {/* Email */}
           <div className="flex items-center gap-3 justify-center">
             <FaEnvelope className="text-pink-500" />
-            <span>rohmafatima132@gmail.com</span>
+            <span>rohmashabbir09@gmail.com</span>
           </div>
 
           {/* Location */}

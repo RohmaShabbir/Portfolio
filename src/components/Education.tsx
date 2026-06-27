@@ -3,29 +3,22 @@ import { GraduationCap } from "lucide-react";
 
 const educationData = [
   {
-    year: "2023 – Present",
-    degree: "Bachelor's in CS",
+    year: "2024 – Present",
+    degree: "Bachelor's Degree",
     institute: "GIAIC (Governor Initiative AI & Computing)",
     description:
       "Currently pursuing advanced studies in Computer Science through the GIAIC initiative, with a strong emphasis on Artificial Intelligence and cutting-edge technologies. Presently in Quarter 3, deep-diving into Python programming and Agentic AI systems.",
     icon: <GraduationCap className="w-5 h-5 text-indigo-400" />,
   },
   {
-    year: "2020 – 2022",
-    degree: "Intermediate in Arts",
-    institute: "Board of Intermediate Karachi",
+    year: "2026 – Present",
+    degree: "BS (Bachelor of Business & Information Technology)",
+    institute: "Virtual University of Pakistan",
     description:
-      "Completed with focus on humanities subjects. Developed strong interest in technology and digital innovation during this time.",
+      "BS (Bachelor of Science) in Business & Information Technology student at Virtual University of Pakistan, passionate about technology, innovation, and professional growth.",
     icon: <GraduationCap className="w-5 h-5 text-indigo-400" />,
   },
-  {
-    year: "2018 – 2020",
-    degree: "Matriculation (Science)",
-    institute: "Board of Secondary Education Karachi",
-    description:
-      "Studied core science subjects including Physics, Chemistry, and Biology. Developed a strong academic base and a growing curiosity for technology",
-    icon: <GraduationCap className="w-5 h-5 text-indigo-400" />,
-  },
+
 ];
 
 const Education = () => {
